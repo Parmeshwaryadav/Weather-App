@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;500;700;800&display=swap");
+
+/* root */
+:root {
+  /* colors */
+  --primary-color: #171717;
+  --secondary-color: #ffffff;
+}
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(208, 166, 212);
+  background: linear-gradient(
+    90deg,
+    rgba(208, 166, 212, 1) 0%,
+    rgba(163, 208, 242, 1) 91%
+  );
+  font-family: "Catamaran", sans-serif;
+}
+
+/* designing the weather app container */
+.container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+}
+
+.app-header {
+}
