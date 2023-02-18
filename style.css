@@ -19,12 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(208, 166, 212);
-  background: linear-gradient(
-    90deg,
-    rgba(208, 166, 212, 1) 0%,
-    rgba(163, 208, 242, 1) 91%
-  );
+  background-image: url(./);
   font-family: "Catamaran", sans-serif;
 }
 
