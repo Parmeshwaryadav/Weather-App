@@ -12,11 +12,9 @@
   <body>
     <!-- container for holding the weather card -->
     <div class="container">
-      <h1 class="app-header">Weather Web App</h1>
-
       <!-- section for searching the weather of a city -->
       <form onsubmit="getData(event)" class="searchData">
-        <input id="inputBox" type="text" placeholder="Enter a city name" />
+        <input id="inputBox" type="text" placeholder="Search Your City" />
         <button>Search</button>
       </form>
 
@@ -71,20 +69,24 @@
           </div>
         </div>
       </section>
+
+      <section>
+        <div>
+          <h1>Today's Date</h1>
+          <p style="text-align: center" id="date"></p>
+        </div>
+        <div>
+          <h1>Time</h1>
+          <p
+            style="text-align: center"
+            id="DigitalCLOCK"
+            onload="showTime()"
+          ></p>
+        </div>
+      </section>
     </div>
 
     <!-- forecasted days -->
-
-    <section>
-      <div>
-        <h1>Today's Date</h1>
-        <p style="text-align: center" id="date"></p>
-      </div>
-      <div>
-        <h1>Time</h1>
-        <p style="text-align: center" id="DigitalCLOCK" onload="showTime()"></p>
-      </div>
-    </section>
   </body>
 
   <!-- adding the javascript file -->
