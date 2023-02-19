@@ -1,3 +1,4 @@
+// sets the background image from unsplash API.
 const backgroundImage = async () => {
   // Fetch Details
   const fetchData = await fetch(
@@ -8,22 +9,20 @@ const backgroundImage = async () => {
 
   // Displaying the data in HTML
   const background = document.querySelector("body");
-
   background.style.backgroundImage = `url(${APIData.results[0].urls.full})`;
-  console.log(background);
 };
 backgroundImage();
-
-// Data => Done
-// Variable to Store the Element => Done
-// Function to get the data from weather app
-// Manipluate the varibe of already created element
 
 let data;
 
 const inputBox = document.getElementById("inputBox");
 const countryName = document.getElementById("countryName");
 const stateName = document.getElementById("stateName");
+
+// Data => Done
+// Variable to Store the Element => Done
+// Function to get the data from weather app
+// Manipluate the varibe of already created element
 const cityName = document.getElementById("cityName");
 const humidity = document.getElementById("humidity");
 const windSpeed = document.getElementById("windSpeed");
