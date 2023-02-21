@@ -10,78 +10,96 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- container for holding the weather card -->
+    <!-- main Container -->
     <div class="container">
-      <!-- section for searching the weather of a city -->
-      <form onsubmit="getData(event)" class="searchData">
-        <input id="inputBox" type="text" placeholder="Search Your City" />
-        <button>Search</button>
-      </form>
+      <!-- year & Date -->
 
-      <!-- section for displaying the city weather data -->
-      <section class="cityWeatherData">
-        <!-- displaying the country details -->
+      <div class="left">
+        <section>
+          <div>
+            <h1 style="text-align: center" id="date">Date</h1>
+          </div>
+          <div>
+            <p style="text-align: center" id="DigitalCLOCK" onload="showTime()">
+              Time
+            </p>
+          </div>
+        </section>
+
+        <!-- section for searching the weather of a city -->
+        <form onsubmit="getData(event)" class="searchData">
+          <input id="inputBox" type="text" placeholder="Search Your City" />
+          <button>
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 16 16"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </form>
+
+        <!-- section for displaying the city weather data -->
+        <!-- <section class="cityWeatherData">
+
         <div class="countryDetails details">
-          <!-- displaying the country name -->
           <div class="card">
             <p>Country Name</p>
             <p id="countryName"></p>
           </div>
 
-          <!-- displaying the state name -->
           <div class="card">
             <p>State Name</p>
             <p id="stateName"></p>
           </div>
 
-          <!-- displaying the city name -->
           <div class="card">
             <p>City Name</p>
             <p id="cityName"></p>
           </div>
         </div>
 
-        <!-- displaying the weather status -->
         <div class="weatherDetails details">
-          <!-- displaying the humidity -->
           <div class="card">
             <p>Humidity</p>
             <p id="humidity"></p>
           </div>
 
-          <!-- displaying the wind speed -->
           <div class="card">
             <p>Wind Speed</p>
             <p><span id="windSpeed"></span> KMPH</p>
           </div>
 
-          <!-- displaying the current temprature in celcius -->
           <div class="card">
             <p>Temperature</p>
-            <!-- unicode for degree celcius symbol -->
             <p><span id="temprature"></span>&#8451;</p>
           </div>
 
-          <!-- displaying the weather condition -->
           <div class="card">
             <img width="20px" id="logoImage" src="" alt="icon" />
             <p id="weatherStatus"></p>
           </div>
         </div>
-      </section>
+      </section> -->
+      </div>
 
-      <section>
-        <div>
-          <h1>Today's Date</h1>
-          <p style="text-align: center" id="date"></p>
-        </div>
+      <section class="right">
         <div>
           <h1>Time</h1>
-          <p
-            style="text-align: center"
-            id="DigitalCLOCK"
-            onload="showTime()"
-          ></p>
         </div>
       </section>
     </div>
@@ -90,5 +108,5 @@
   </body>
 
   <!-- adding the javascript file -->
-  <script src="./script.js"></script>
+  <!-- <script src="./script.js"></script> -->
 </html>

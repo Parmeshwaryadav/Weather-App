@@ -3,7 +3,7 @@
 /* root */
 :root {
   /* colors */
-  --primary-color: #171717;
+  --primary-color: #eef2f3;
   --secondary-color: #ffffff;
 }
 /* css reset */
@@ -20,23 +20,54 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Catamaran", sans-serif;
+  background-color: gray;
+  color: black;
 }
 
 /* designing the weather app container */
 .container {
-  width: 600px;
+  width: 900px;
+  height: 600px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px;
-  background-color: #0f172a;
-  opacity: 85%;
-  border-radius: 20px;
-  color: white;
+  background-color: var(--secondary-color);
   overflow: hidden;
 }
 
-.app-header {
+.left {
+  width: 45rem;
+}
+
+/* parent */
+.searchData {
+  position: relative;
+}
+
+#inputBox {
+  width: 15rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.searchData > button {
+  position: absolute;
+  background-color: transparent;
+  border: transparent;
+  right: 0.1rem;
+  top: 0.7rem;
+  cursor: pointer;
+}
+.searchData > button > svg {
+  width: 4rem;
+  height: 1.8rem;
+}
+label {
+  position: relative;
+}
+
+/* right */
+.right {
+  background-color: #173a7b;
+  width: 200px;
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
 }
