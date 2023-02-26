@@ -15,86 +15,85 @@
       <!-- year & Date -->
 
       <div class="left">
-        <section>
+        <header>
           <div>
-            <h1 style="text-align: center" id="date">Date</h1>
-          </div>
-          <div>
+            <h2 style="text-align: center" id="date">Date</h2>
             <p style="text-align: center" id="DigitalCLOCK" onload="showTime()">
               Time
             </p>
           </div>
-        </section>
 
-        <!-- section for searching the weather of a city -->
-        <form onsubmit="getData(event)" class="searchData">
-          <input id="inputBox" type="text" placeholder="Search Your City" />
-          <button>
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 16 16"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-                clip-rule="evenodd"
-              ></path>
-              <path
-                fill-rule="evenodd"
-                d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </form>
+          <!-- section for searching the weather of a city -->
+          <form onsubmit="getData(event)" class="searchData">
+            <input id="inputBox" type="text" placeholder="Search Your City" />
+            <button>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                  clip-rule="evenodd"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </header>
 
         <!-- section for displaying the city weather data -->
-        <!-- <section class="cityWeatherData">
+        <section class="cityWeatherData">
+          <p>Today's Overview</p>
 
-        <div class="countryDetails details">
-          <div class="card">
-            <p>Country Name</p>
-            <p id="countryName"></p>
+          <div class="countryDetails details">
+            <div class="card">
+              <p>Country Name</p>
+              <p id="countryName"></p>
+            </div>
+
+            <div class="card">
+              <p>State Name</p>
+              <p id="stateName"></p>
+            </div>
+
+            <div class="card">
+              <p>City Name</p>
+              <p id="cityName"></p>
+            </div>
           </div>
 
-          <div class="card">
-            <p>State Name</p>
-            <p id="stateName"></p>
-          </div>
+          <div class="weatherDetails details">
+            <div class="card">
+              <p>Humidity</p>
+              <p id="humidity"></p>
+            </div>
 
-          <div class="card">
-            <p>City Name</p>
-            <p id="cityName"></p>
-          </div>
-        </div>
+            <div class="card">
+              <p>Wind Speed</p>
+              <p><span id="windSpeed"></span> KMPH</p>
+            </div>
 
-        <div class="weatherDetails details">
-          <div class="card">
-            <p>Humidity</p>
-            <p id="humidity"></p>
-          </div>
+            <div class="card">
+              <p>Temperature</p>
+              <p><span id="temprature"></span>&#8451;</p>
+            </div>
 
-          <div class="card">
-            <p>Wind Speed</p>
-            <p><span id="windSpeed"></span> KMPH</p>
+            <div class="card">
+              <img width="20px" id="logoImage" src="" alt="icon" />
+              <p id="weatherStatus"></p>
+            </div>
           </div>
-
-          <div class="card">
-            <p>Temperature</p>
-            <p><span id="temprature"></span>&#8451;</p>
-          </div>
-
-          <div class="card">
-            <img width="20px" id="logoImage" src="" alt="icon" />
-            <p id="weatherStatus"></p>
-          </div>
-        </div>
-      </section> -->
+        </section>
       </div>
 
       <section class="right">

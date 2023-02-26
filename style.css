@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 /* root */
 :root {
@@ -20,8 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Catamaran", sans-serif;
-  background-color: gray;
-  color: black;
+  background-color: #eaeced;
 }
 
 /* designing the weather app container */
@@ -29,12 +28,20 @@ body {
   width: 900px;
   height: 600px;
   display: flex;
-  background-color: var(--secondary-color);
+  background-color: #eef2f3;
   overflow: hidden;
+  border-radius: 1rem;
 }
 
 .left {
   width: 45rem;
+
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  gap: 8rem;
 }
 
 /* parent */
@@ -59,15 +66,12 @@ body {
   width: 4rem;
   height: 1.8rem;
 }
-label {
-  position: relative;
-}
 
 /* right */
 .right {
   background-color: #173a7b;
-  width: 200px;
+  width: 300px;
   height: 600px;
-  display: flex;
-  justify-content: flex-end;
+  color: var(--secondary-color);
+  padding: 0.5rem;
 }
