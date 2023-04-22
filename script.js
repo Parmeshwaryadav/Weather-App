@@ -75,27 +75,33 @@ const getData = async (event) => {
 // date.innerHTML = todaysDate;
 
 // for time
-// function showTime() {
-//   let date = new Date();
-//   let h = date.getHours();
-//   let m = date.getMinutes();
-//   let s = date.getSeconds();
-//   let session = "AM";
+function showTime() {
+  let date = new Date();
+  let h = date.getHours();
+  let m = date.getMinutes();
+  let s = date.getSeconds();
+  let session = "AM";
 
-//   if (h > 12) {
-//     session = "PM";
-//   }
-//   // Will add the zeros at start of the element if its less then 10 hour, minutes or a sec
-//   h = h < 10 ? "0" + h : h;
-//   m = m < 10 ? "0" + m : m;
-//   s = s < 10 ? "0" + s : s;
-//   let time = h + ":" + m + ":" + s + " " + session;
-//   document.getElementById("DigitalCLOCK").innerText = time;
+  if (h > 12) {
+    session = "PM";
+  }
+  // Will add the zeros at start of the element if its less then 10 hour, minutes or a sec
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
+  let time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("DigitalCLOCK").innerText = time;
 
-//   setTimeout(showTime, 1000);
-// }
+  setTimeout(showTime, 1000);
+}
+showTime();
 
-// showTime();
+// for date
+function showDate() {
+  let today = new Date().toLocaleDateString();
+  document.getElementById("TodaysDate").innerHTML = today;
+}
+showDate();
 
 // function that change background of the web app
 // function backgroundChange(weather) {
