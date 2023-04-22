@@ -98,8 +98,18 @@ showTime();
 
 // for date
 function showDate() {
-  let today = new Date().toLocaleDateString();
-  document.getElementById("TodaysDate").innerHTML = today;
+  // https://stackoverflow.com/questions/12409299/how-to-get-current-formatted-date-dd-mm-yyyy-in-javascript-and-append-it-to-an-i#:~:text=const%20today%20%3D%20new%20Date()%3B,%2F'%20%2B%20yyyy%3B%20document.
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  let mm = today.getMonth() + 1; // Months start at 0!
+  let dd = today.getDate();
+
+  if (dd < 10) dd = "0" + dd;
+  if (mm < 10) mm = "0" + mm;
+
+  const formattedToday = dd + "/" + mm + "/" + yyyy;
+
+  document.getElementById("TodaysDate").innerHTML = formattedToday;
 }
 showDate();
 
